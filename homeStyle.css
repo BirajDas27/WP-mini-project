@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+@media only screen and (max-width: 426px) and (min-width: 200px){
+    .phoneMain{
+        background-color:rgb(252, 219, 197);
+        padding-bottom: 80px;
+        
+    }
+
+    .lapMain{
+        display: none;
+    }
+
+    #navBar{
+        display: flex;
+        background-color: rgb(249, 178, 130);
+        padding: 20px 10px;
+        border-bottom: 3px;
+        border-color: black;
+        border-bottom-style: groove;
+        
+    }
+
+    .com{
+        position: absolute;
+        margin-top: 2px;
+        margin-left: 5px;
+        font-size:25px;
+        font-family:monospace;
+        font-weight: bolder
+    }
+
+    #cateMain{
+        padding-top: 25px
+    }
+
+    .cate{
+        border-radius: 20px;
+        border: 2px dashed black;
+        font-size: 20px;
+        background-color:rgb(252, 219, 197);
+        margin: 15px;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        width: 250px;
+        padding-left: auto;
+        padding-right: auto;
+        box-shadow: 6px 6px 6px gray;
+    }
+
+    
+}
+
+@media only screen and (min-width: 426px){
+    .phoneMain{
+        display: none;
+    }
+
+    .lapMain{
+        background-color:blanchedalmond;
+        padding-bottom: 63px
+    }
+
+    #lapNav{
+        position: absolute;
+        width:1476px;
+        background-color:rgb(249, 178, 130);
+        padding: 15px 30px;
+        box-shadow: 0px 15px 15px gray;
+        display: flex
+    }
+
+    .lapCom{
+        font-size:30px;
+        font-family: monospace;
+        font-weight: bolder;
+        position: absolute;
+        top: 20px;
+        left: 90px;
+        
+    }
+
+    .lapIcons{
+        position: absolute;
+        right: 3rem;
+        top: 1.5rem;
+        display: flex;
+    }
+
+    .icon{
+        padding:0px 20px;
+        transition: .3s ease;
+    }
+
+    .icon:hover{
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        filter: drop-shadow(4px 4px 2px black);
+        
+    }
+
+    .lapHome{
+        border: 0px;
+        background-color: transparent;
+        position: absolute;
+        left: 315px;
+        top: 33px;
+        font-family: monospace;
+        font-size: 16px;
+        transition: 0.3s ease;
+    }
+
+    .lapHome:hover{
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        filter: drop-shadow(5px 3px 2px rgb(34, 34, 34));
+    }
+
+    .lapAbout{
+        border: 0px;
+        background-color: transparent;
+        position: absolute;
+        left: 380px;
+        top: 33px;
+        font-family: monospace;
+        font-size: 16px;
+        transition: 0.3s ease;
+    }
+
+    .lapAbout:hover{
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        filter: drop-shadow(5px 3px 2px rgb(34, 34, 34));
+    }
+
+
+    #lapCateMain{
+        padding-top: 130px;
+    }
+    
+    .lapCate{
+        border-style:dashed;
+        border-radius: 20px;
+        border-color: black;
+        font-family: monospace;
+        font-weight: bolder;
+        border-width: 2px;
+        font-size: 20px;
+        background-color:rgb(253, 190, 148);
+        margin: 30px;
+        width: 300px;
+        height: 200px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        box-shadow: 4px 6px 9px gray;
+        transition: .3s ease;
+    }
+
+    .lapCate:hover{
+        
+        background-color:rgb(228, 160, 114);
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        box-shadow: 10px 14px 20px gray;
+    }
+
+}
