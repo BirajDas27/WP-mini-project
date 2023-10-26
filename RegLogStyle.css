@@ -144,8 +144,9 @@
 
 @media only screen and (min-width: 426px ){
     .lapMain{
-        width: 100%;
-        background-image: url(assets/bg.jpeg);
+        background-size: cover;
+        height: 100vh;
+        background-image: url(assets/bg2.jpg);
     }
 
     .phoneMain{
@@ -157,7 +158,7 @@
 
     #half{
         width: 800px;
-        background: rgba(139, 72, 72, 0.3);
+        background: rgba(0, 0, 0, 0.3);
         backdrop-filter: blur(10px);
         padding-bottom: 130px;
         margin-bottom: 45.5px;
@@ -202,7 +203,7 @@
 
 
     .lapMid{
-        margin-top: 120px;
+        margin-top: 70px;
         font-size:20px;
         padding-left: 100px;
         
@@ -217,38 +218,51 @@
     #lapReg{
         padding-right: 200px;
         font-style: monospace;
+        font-variant: small-caps;
         font-size:50px;
         font-weight: bolder;
         padding-bottom: 20px;
-        color: white;
-        border-style:solid;
+        color: rgb(0, 0, 0);
+        border-style: solid;
         border-width: 0px;
-        border-bottom-width: 3px;
+        border-bottom-width: 5px;
         border-color: black;
     }
 
     .lapInp{
         padding-top: 30px;
-        margin-bottom: 30px
+        margin-bottom: 30px;
+        
     }
 
     .lapRegCusIn{
         background:transparent;
         border-width:0px;
         border-bottom-width:3px;
+        border-bottom-color: black ;
         padding-bottom: 5px;
         font-size: 20px;
+        font-family: monospace;
+        font-weight: bold;
         padding: 5px;
-        color:rgb(105, 100, 100)
+        color:rgb(0, 0, 0);
     }
+
+    .lapRegCusIn::placeholder{
+        color: black;
+        font-weight:400;
+        font-weight: bold;
+    }
+
+    
     
     #lapRegBut{
         position: absolute;
-        right: 374px;
+        right: 390px;
         font-size: 14px;
         font-weight:bold;
         font-family: monospace;
-        background-color:rgba(191, 30, 30, 0.3);
+        background-color:rgba(0, 164, 11, 0.658);
         backdrop-filter: blur(10px);
         color: white;
         padding:2px 4px;
@@ -260,16 +274,17 @@
         transform: scale(1.1);
         -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
-        background-color:rgba(255, 0, 0, 0.3)
+        backdrop-filter: blur(0px);
+        background-color:rgba(0, 255, 47, 0.864)
     }
 
     #lapLogBut{
         position: absolute;
-        right: 374px;
+        right: 390px;
         font-size: 14px;
         font-weight:bold;
         font-family: monospace;
-        background-color:rgba(191, 30, 30, 0.3);
+        background-color:rgba(0, 164, 11, 0.658);
         backdrop-filter: blur(10px);
         color: white;
         padding:2px 4px;
@@ -281,25 +296,19 @@
         transform: scale(1.1);
         -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
-        background-color:rgba(255, 0, 0, 0.3)
+        backdrop-filter: blur(0px);
+        background-color:rgba(0, 255, 47, 0.864)
     }
 
     .lapToLogIn{
         position:absolute;
-        margin-top: 70px;
         transition: .3s ease;
         border-radius: 5px;
-        bottom: 100px;
-        right: 370px;
-        padding: 5px 10px px;
-    }
-
-    .lapToLogIn:hover{
-        transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        background-color:rgba(255, 255, 255, 0.3);
-        backdrop-filter: blur(2px);
+        bottom: 160px;
+        right: 360px;
+        padding: 5px 10px 0px;
+        font-family: monospace;
+        font-weight: bold;
     }
 
     .lapToRegIn{
@@ -311,13 +320,6 @@
         padding: 5px 10px px;
     }
 
-    .lapToRegIn:hover{
-        transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        background-color:rgba(255, 255, 255, 0.3);
-        backdrop-filter: blur(2px);
-    }
 }
 
 .logo{
