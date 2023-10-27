@@ -60,7 +60,7 @@
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     filter:invert(1) drop-shadow(4px 4px 2px black);
-   
+    cursor: pointer;
 }
 
 .lapHome{
@@ -80,6 +80,7 @@
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     filter: drop-shadow(5px 3px 2px rgb(34, 34, 34));
+    cursor: pointer;
 }
 
 .lapAbout{
@@ -99,9 +100,10 @@
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     filter: drop-shadow(5px 3px 2px rgb(34, 34, 34));
+    cursor: pointer;
 }
 
-.lapLogOut{
+.out{
     border: 0px;
     background-color: transparent;
     position: absolute;
@@ -109,11 +111,14 @@
     top: 33px;
     font-family: monospace;
     font-size: 16px;
+    font-style:normal;
+    text-decoration: none;
     transition: 0.3s ease;
-    color: white;
+    color: rgb(255, 255, 255);
+    
 }
 
-.lapLogOut:hover{
+.out:hover{
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
@@ -128,10 +133,10 @@
 
 #helloUser{
     position: absolute;
-    left: 30px;
+    left: 15px;
     top: 110px;
     font-family: monospace;
-    font-size: 20px;
+    font-size: 26px;
     font-weight: bold;
 }
 
@@ -161,6 +166,7 @@
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     box-shadow: 10px 14px 20px black;
+    cursor: pointer;
 }
     
 

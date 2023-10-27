@@ -20,10 +20,12 @@
         <div class="blur">
             <nav id="lapNav">
                 <img class="lapLogo" src="assets/triangles.png" alt="logo" width="45px" eight="45px">
+                
                 <label class="lapCom">surveyJunkie</label>
+                
                 <input type="button" align="center" class="lapHome" onClick="parent.location='homepage.php'" value="Home"></input>
                 <input type="button" align="center" class="lapAbout" onClick="parent.location='about.html'" value="About"></input>
-
+                <a class="out" href="logout.php">LogOut</a>
                 <div class="lapIcons">
                     <div class="icon"><img src="assets/icons/instagram.png" onClick='window.open("https://www.instagram.com/p/BgSlRglAKBn/?hl=en")' width="35px"></div>
                     <div class="icon"><img src="assets/icons/facebook.png" onClick='window.open("https://shorturl.at/rsCHO")' width="35px" target="_blank"></div>
