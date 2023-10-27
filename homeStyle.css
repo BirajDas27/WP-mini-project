@@ -3,190 +3,164 @@
     padding: 0;
     
 }
+.phoneMain{
+    display: none;
+}
+
+.lapMain{
+    background-image: url(assets/bg2.jpg);
+    background-size: cover;
+}
+
+.blur{
+    backdrop-filter: blur(3px);
+    padding-bottom: 63px;
+}
 
 
+#lapNav{
+    position: absolute;
+    width:1476px;
+    background-color:rgb(53, 53, 53);
+    padding: 15px 30px;
+    box-shadow: 0px 15px 15px rgb(32, 32, 32);
+    display: flex
+}
 
-@media only screen and (max-width: 426px) and (min-width: 200px){
-    .phoneMain{
-        background-color:rgb(252, 219, 197);
-        padding-bottom: 80px;
-        
-    }
+.lapLogo{
+    filter: invert(1);
+}
 
-    .lapMain{
-        display: none;
-    }
+.lapCom{
+    font-size:30px;
+    font-family: monospace;
+    font-weight: bolder;
+    position: absolute;
+    top: 20px;
+    left: 90px;
+    color: white;
+}
 
-    #navBar{
-        display: flex;
-        background-color: rgb(249, 178, 130);
-        padding: 20px 10px;
-        border-bottom: 3px;
-        border-color: black;
-        border-bottom-style: groove;
-        
-    }
-
-    .com{
-        position: absolute;
-        margin-top: 2px;
-        margin-left: 5px;
-        font-size:25px;
-        font-family:monospace;
-        font-weight: bolder
-    }
-
-    #cateMain{
-        padding-top: 25px
-    }
-
-    .cate{
-        border-radius: 20px;
-        border: 2px dashed black;
-        font-size: 20px;
-        background-color:rgb(252, 219, 197);
-        margin: 15px;
-        padding-top: 45px;
-        padding-bottom: 45px;
-        width: 250px;
-        padding-left: auto;
-        padding-right: auto;
-        box-shadow: 6px 6px 6px gray;
-    }
-
+.lapIcons{
+    position: absolute;
+    right: 3rem;
+    top: 1.5rem;
+    display: flex;
     
 }
 
-@media only screen and (min-width: 426px){
-    .phoneMain{
-        display: none;
-    }
-
-    .lapMain{
-        background-image: url(assets/bg2.jpg);
-        background-size: cover;
-    }
-
-    .blur{
-        backdrop-filter: blur(3px);
-        padding-bottom: 63px;
-    }
-
-
-    #lapNav{
-        position: absolute;
-        width:1476px;
-        background-color:rgb(53, 53, 53);
-        padding: 15px 30px;
-        box-shadow: 0px 15px 15px rgb(32, 32, 32);
-        display: flex
-    }
-
-    .lapLogo{
-        filter: invert(1);
-    }
-
-    .lapCom{
-        font-size:30px;
-        font-family: monospace;
-        font-weight: bolder;
-        position: absolute;
-        top: 20px;
-        left: 90px;
-        color: white;
-    }
-
-    .lapIcons{
-        position: absolute;
-        right: 3rem;
-        top: 1.5rem;
-        display: flex;
-        
-    }
-
-    .icon{
-        padding:0px 20px;
-        transition: .3s ease;
-        filter: invert(1)
-    }
-
-    .icon:hover{
-        transform: scale(1.2);
-        -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        filter:invert(1) drop-shadow(4px 4px 2px black);
-       
-    }
-
-    .lapHome{
-        border: 0px;
-        background-color: transparent;
-        position: absolute;
-        left: 315px;
-        top: 33px;
-        font-family: monospace;
-        font-size: 16px;
-        transition: 0.3s ease;
-        color: white;
-    }
-
-    .lapHome:hover{
-        transform: scale(1.2);
-        -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        filter: drop-shadow(5px 3px 2px rgb(34, 34, 34));
-    }
-
-    .lapAbout{
-        border: 0px;
-        background-color: transparent;
-        position: absolute;
-        left: 380px;
-        top: 33px;
-        font-family: monospace;
-        font-size: 16px;
-        transition: 0.3s ease;
-        color: white;
-    }
-
-    .lapAbout:hover{
-        transform: scale(1.2);
-        -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        filter: drop-shadow(5px 3px 2px rgb(34, 34, 34));
-    }
-
-
-    #lapCateMain{
-        padding-top: 130px;
-    }
-    
-    .lapCate{
-        border-style:dashed;
-        border-radius: 20px;
-        border-color: black;
-        font-family: monospace;
-        font-weight: bolder;
-        border-width: 2px;
-        font-size: 25px;
-        background-color:#9c9c9c;
-        margin: 30px;
-        width: 300px;
-        height: 200px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        box-shadow: 4px 6px 9px rgb(0, 0, 0);
-        transition: .3s ease;
-        color: white;
-    }
-
-    .lapCate:hover{
-        
-        background-color:rgb(186, 184, 184);
-        transform: scale(1.2);
-        -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        box-shadow: 10px 14px 20px black;
-    }
-
+.icon{
+    padding:0px 20px;
+    transition: .3s ease;
+    filter: invert(1)
 }
+
+.icon:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    filter:invert(1) drop-shadow(4px 4px 2px black);
+   
+}
+
+.lapHome{
+    border: 0px;
+    background-color: transparent;
+    position: absolute;
+    left: 315px;
+    top: 33px;
+    font-family: monospace;
+    font-size: 16px;
+    transition: 0.3s ease;
+    color: white;
+}
+
+.lapHome:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    filter: drop-shadow(5px 3px 2px rgb(34, 34, 34));
+}
+
+.lapAbout{
+    border: 0px;
+    background-color: transparent;
+    position: absolute;
+    left: 380px;
+    top: 33px;
+    font-family: monospace;
+    font-size: 16px;
+    transition: 0.3s ease;
+    color: white;
+}
+
+.lapAbout:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    filter: drop-shadow(5px 3px 2px rgb(34, 34, 34));
+}
+
+.lapLogOut{
+    border: 0px;
+    background-color: transparent;
+    position: absolute;
+    left: 450px;
+    top: 33px;
+    font-family: monospace;
+    font-size: 16px;
+    transition: 0.3s ease;
+    color: white;
+}
+
+.lapLogOut:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    filter: drop-shadow(5px 3px 2px rgb(34, 34, 34));
+}
+
+
+#lapCateMain{
+    padding-top: 130px;
+    margin: 0px;
+}
+
+#helloUser{
+    position: absolute;
+    left: 30px;
+    top: 110px;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.lapCate{
+    border-style:dashed;
+    border-radius: 20px;
+    border-color: black;
+    font-family: monospace;
+    font-weight: bolder;
+    border-width: 2px;
+    font-size: 25px;
+    background-color:#9c9c9c;
+    margin: 30px;
+    width: 300px;
+    height: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: 4px 6px 9px rgb(0, 0, 0);
+    transition: .3s ease;
+    color: white;
+}
+
+.lapCate:hover{
+    
+    background-color:rgb(186, 184, 184);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    box-shadow: 10px 14px 20px black;
+}
+    
+
