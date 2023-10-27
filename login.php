@@ -10,28 +10,26 @@
         $password = $_POST['password'];
 
         if(!empty($user) && !empty($password)){
-            //read from database
             $query = "select * from users where username = '$user' limit 1";
 
             $result = mysqli_query($con,$query);
-
             if($result){
                 if($result && mysqli_num_rows($result) > 0){
                     $user_data = mysqli_fetch_assoc($result);
-                    
+                                
                     if($user_data['password'] === $password){
                         $_SESSION['user_id'] = $user_data['username'];
-                        
+                                    
                         header("Location: homepage.php");
                         die;
                     }
+                    echo '<script type=text/javascript> alert("Wrong password entered.")</script>';
+                                
                 }
             }
-            echo "Wrong username or password!";
-            
         }
         else{
-            echo "Please enter valid information!";
+            echo '<script type=text/javascript> alert("Empty field.")</script>';
         }
     }
 ?>
