@@ -9,20 +9,26 @@
         $mail = $_POST['mail'];
         $gender = $_POST['gender'];
         $password = $_POST['password'];
+        $password1 = $_POST['password1'];
 
         if(!empty($user_name) && !empty($mail) && !empty($gender) && !empty($password) && !is_numeric($user_name)){
-            //save to database
-            $query = "insert into users(username,email,gender,password) values ('$user_name','$mail','$gender','$password')";
+            if($password != $password1){
+                echo '<script type="text/javascript"> alert("Confirmation password is not matching.")</script>';
+            }
+            else{
+                //save to database
+                $query = "insert into users(username,email,gender,password) values ('$user_name','$mail','$gender','$password')";
 
-            mysqli_query($con,$query);
+                mysqli_query($con,$query);
 
-            header("Location: login.php");
-            die;
-        }
-        else{
-            echo "Please enter valid information!";
+                header("Location: login.php");
+                die;
+            }
+        }else{
+            echo '<script type="text/javascript"> alert("You left some fields unfilled or invalid type.")</script>';
         }
     }
+
 ?>
 
 <!DOCTYPE html>
@@ -67,7 +73,7 @@
                                 <br><input class="lapRegCusIn" type="password" placeholder="Password" name="password">
                             </div>
                             <div>
-                                <br><input class="lapRegCusIn" type="password" placeholder="Confirm password">
+                                <br><input class="lapRegCusIn" type="password" placeholder="Confirm password" name="password1">
                             </div>
                             <div>
                                 <input type="submit" id="lapRegBut" value="REGISTER"></input>
