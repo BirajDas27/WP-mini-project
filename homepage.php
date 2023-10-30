@@ -24,7 +24,7 @@
                 <label class="lapCom">surveyJunkie</label>
                 
                 <input type="button" align="center" class="lapHome" onClick="parent.location='homepage.php'" value="Home"></input>
-                <input type="button" align="center" class="lapAbout" onClick="parent.location='about.html'" value="About"></input>
+                <input type="button" align="center" class="lapAbout" onClick="parent.location='about.php'" value="About"></input>
                 <a class="out" href="logout.php">LogOut</a>
                 <div class="lapIcons">
                     <div class="icon"><img src="assets/icons/instagram.png" onClick='window.open("https://www.instagram.com/p/BgSlRglAKBn/?hl=en")' width="35px"></div>
@@ -37,12 +37,12 @@
         
             <div id="lapCateMain" align="center">
                 <div id="helloUser">Hello, <?php echo $user_data['username'];?></div>
-                <input type="button" align="center" class="lapCate" onClick="parent.location='sports.html'" value="SPORTS"></input>
-                <input type="button" align="center" class="lapCate" onClick="parent.location=''" value="HISTORY"></input>
-                <input type="button" align="center" class="lapCate" onClick="parent.location=''" value="GEOGRAPHY"></input><br>
-                <input type="button" align="center" class="lapCate" onClick="parent.location=''" value="CURRENT AFFAIRS"></input>
-                <input type="button" align="center" class="lapCate" onClick="parent.location=''" value="HEALTH"></input>
-                <input type="button" align="center" class="lapCate" onClick="parent.location=''" value="TRAVEL"></input>
+                <input type="button" align="center" class="lapCate" onClick="parent.location='categories/sports.php'" value="SPORTS"></input>
+                <input type="button" align="center" class="lapCate" onClick="parent.location='categories/history.php'" value="HISTORY"></input>
+                <input type="button" align="center" class="lapCate" onClick="parent.location='categories/geography.php'" value="GEOGRAPHY"></input><br>
+                <input type="button" align="center" class="lapCate" onClick="parent.location='categories/currentaffairs.php'" value="CURRENT AFFAIRS"></input>
+                <input type="button" align="center" class="lapCate" onClick="parent.location='categories/health.php'" value="HEALTH"></input>
+                <input type="button" align="center" class="lapCate" onClick="parent.location='categories/travel.php'" value="TRAVEL"></input>
             </div>
         </div>
     </div>
