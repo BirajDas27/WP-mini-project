@@ -3,19 +3,13 @@
     padding: 0;
     
 }
-.phoneMain{
-    display: none;
-}
 
 .lapMain{
-    background-image: url(assets/bg2.jpg);
+    background-image: url(assets/bg4.jpg);
     background-size: cover;
+    padding-bottom: 45px;
 }
 
-.blur{
-    backdrop-filter: blur(3px);
-    padding-bottom: 63px;
-}
 
 
 #lapNav{

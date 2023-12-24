@@ -7,17 +7,13 @@
 .lapMain{
     background-size: cover;
     height: 100vh;
-    background-image: url(assets/bg2.jpg);
-}
-
-.phoneMain{
-    display: none;
+    background-image: url(assets/bg3.png);
 }
 
 #half{
     width: 800px;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
+    background: rgba(124, 124, 124, 0.271);
+    backdrop-filter: blur(2px);
     padding-bottom: 130px;
     margin-bottom: 45.5px;
     border-bottom-right-radius: 100px;
@@ -55,26 +51,46 @@
 }
 
 
-
-
-
-
-
-.lapMid{
-    margin-top: 70px;
-    font-size:20px;
-    padding-left: 100px;
-    
+.lapMidLog{
+    font-size: 20px;
+    translate: 50% 50%;
+    align-content: 50%;
+    justify-content: 50%;
 }
 
-.lapMidLog{
-    margin-top:150px;
-    font-size: 20px;
-    padding-left: 100px
+#lapLogBut{
+    font-size: 14px;
+    font-weight:bold;
+    font-family: monospace;
+    background-color:rgba(0, 164, 11, 0.658);
+    backdrop-filter: blur(10px);
+    color: rgb(255, 255, 255);
+    padding:2px 4px;
+    border-radius: 5px;
+    transition: .3s ease;
+    margin-left: 61%;
+    margin-top: 20px
+}
+
+#lapLogBut:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    backdrop-filter: blur(0px);
+    background-color:rgba(0, 255, 47, 0.864)
+}
+
+.lapToRegIn{
+    font-family: monospace;
+    font-weight: bold;
+    transition: .3s ease;
+    padding: 5px 10px 0px;
+    margin-top: -5%;
+
 }
 
 #lapReg{
-    padding-right: 200px;
+    padding-right: 160px;
     font-style: monospace;
     font-variant: small-caps;
     font-size:50px;
@@ -85,6 +101,12 @@
     border-width: 0px;
     border-bottom-width: 5px;
     border-color: black;
+}
+
+.lapMid{
+    translate: 30% 25%;
+    justify-content: center;
+    align-items: center;
 }
 
 .lapInp{
@@ -116,9 +138,6 @@
 
 
 #lapRegBut{
-    position: absolute;
-    bottom: 210px;
-    right: 390px;
     font-size: 14px;
     font-weight:bold;
     font-family: monospace;
@@ -128,6 +147,8 @@
     padding:2px 4px;
     border-radius: 5px;
     transition: .3s ease;
+    margin-left: 35.5%;
+    margin-top: 20px
 }
 
 #lapRegBut:hover{
@@ -138,50 +159,19 @@
     background-color:rgba(0, 255, 47, 0.864)
 }
 
-#lapLogBut{
-    position: absolute;
-    right: 390px;
-    bottom: 310px;
-    font-size: 14px;
-    font-weight:bold;
-    font-family: monospace;
-    background-color:rgba(0, 164, 11, 0.658);
-    backdrop-filter: blur(10px);
-    color: rgb(255, 255, 255);
-    padding:2px 4px;
-    border-radius: 5px;
-    transition: .3s ease;
-}
 
-#lapLogBut:hover{
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    backdrop-filter: blur(0px);
-    background-color:rgba(0, 255, 47, 0.864)
-}
 
 .lapToLogIn{
-    position:absolute;
     transition: .3s ease;
     border-radius: 5px;
-    bottom: 160px;
-    right: 360px;
     padding: 5px 10px 0px;
     font-family: monospace;
     font-weight: bold;
+    font-size: 20px;
+    margin-left: -5%;
 }
 
-.lapToRegIn{
-    font-family: monospace;
-    font-weight: bold;
-    position:absolute;
-    transition: .3s ease;
-    border-radius: 5px;
-    bottom: 260px;
-    right: 390px;
-    padding: 5px 10px 0px;
-}
+
 
     
 

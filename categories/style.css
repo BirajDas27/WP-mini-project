@@ -1,47 +1,74 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
-
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/miniProject/assets/bg2.jpg);
+    background-image: linear-gradient(90deg,rgba(131, 130, 130, 0.8), rgba(0, 0, 0, 0.8)), url(/assets/bg6.avif);
+    background-position: center;
     background-size: cover;
 }
-
 .container {
-    width: 455px;
-    height: 610px;
-    margin: 8% auto;
+    width: 820px;
+    height: 500px;
+    margin: 2% auto;
     background: #fff;
     border-radius: 8px;
-    position: relative;
-    overflow: hidden;
-    border: 7px solid #000;
+    position: fixed;
+    top: 100px;
+    border: 1px solid #000;
+    margin-left: 5%; 
 }
 
 h3 {
     text-align: center;
     margin-bottom: 15px;
-    color: #777;
+    color: #000000;
+    font-size: 24px;
+    background-color: rgb(216, 205, 174);
+    height: 40px;
+    border-radius: 10px;
 }
 
+h4{
+    padding-left: 15px;
+    margin-bottom: -5px;
+}
+.personal{
+    background-color:rgb(245, 156, 112);
+    padding-top: 10px;
+    border-radius: 10px;
+}
+.personal input{
+    background-color: rgb(245,156,112);
+}
+.question{
+    background-color: rgb(162, 195, 137);
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+.question input{
+    background-color: rgb(162,195,137);
+}
 .container form {
-    width: 330px;
+    width: 760px;
+    height: 460px;
+    overflow: hidden;
+    overflow-y: scroll;
     position: absolute;
-    top: 60px;
-    left: 40px;
+    left: 30px;
     transition: 0.5s;
+}
+
+form::-webkit-scrollbar{
+    display: none;
 }
 
 form li {
     list-style: none;
     font-size: medium;
-    width: 100%;
-    padding: 15px 10px;
+    width: 94%;
+    padding: 15px 15px;
     margin: 5px;
     border: 0;
-    border-bottom: 1px solid #999;
+    border-bottom: 2px solid #ffffff;
     outline: none;
     background: transparent;
 }
@@ -53,7 +80,7 @@ form input {
 }
 
 ::placeholder {
-    color: #777;
+    color: #000000;
 }
 
 .btn-box {
@@ -65,82 +92,34 @@ form input {
 form button {
     width: 110px;
     height: 35px;
-    margin: 0 25px;
-    background: linear-gradient(to right, #232323, #838383);
-    border-radius: 30px;
-    border: 0;
+    background: linear-gradient(to right, #0e8e00, #40ff00);
+    border-radius: 7px;
+    border: 2px solid black;
     outline: none;
     color: #fff;
     cursor: pointer;
-}
-
-#Form2 {
-    left: 550px;
-}
-
-#Form3 {
-    left: 550px;
-}
-
-#Form4 {
-    left: 550px;
-}
-
-.step-row {
-    width: 455px;
-    height: 40px;
+    display: block;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 -1px 5px -1px #000;
-    position: relative;
+    transition: transform 0.3s; 
+    font-size: 17px
 }
 
-.step_col {
-    width: 114px;
-    text-align: center;
-    color: #333;
-    position: relative;
+form button:hover {
+    transform: scale(1.15); 
 }
 
-#progress {
-    position: absolute;
-    height: 100%;
-    width: 114px;
-    background: linear-gradient(to right, #232323, #838383);
-    transition: 1s;
-}
-
-#progress::after {
-    content: '';
-    height: 0;
-    width: 0;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    position: absolute;
-    right: -19px;
-    top: 0;
-    border-left: 20px solid #838383;
-}
-
-
-/*Nav*/
-
-
-.blur{
-    backdrop-filter: blur(3px);
-    padding-bottom: 63px;
-}
-
+/* navbar */
 
 #lapNav{
     position: fixed;
     top: 0px;
-    width:100%;
+    left: 0px;
+    width:1476px;
     background-color:rgb(53, 53, 53);
     padding: 15px 30px;
     box-shadow: 0px 15px 15px rgb(32, 32, 32);
-    display: flex
+    display: flex;
+    z-index: 1;
 }
 
 .lapLogo{
@@ -159,7 +138,7 @@ form button {
 
 .lapIcons{
     position: absolute;
-    right: 91px;
+    right: 3rem;
     top: 1.5rem;
     display: flex;
     
@@ -240,3 +219,28 @@ form button {
     -ms-transform: scale(1.2);
     filter: drop-shadow(5px 3px 2px rgb(34, 34, 34));
 }
+
+/* Image */
+
+.img {
+    position: fixed;
+    top: 130px;
+    right: 90px; 
+    width: 620px;
+    height: auto; 
+    transition: transform 0.3s;
+    z-index: -1;
+}
+
+/* .img:hover {
+    transform: scale(1.1); 
+} */
+
+.tri-image {
+    width: 100%;
+    height: auto;
+}
+
+
+
+

@@ -24,7 +24,7 @@
                 <label class="lapCom">surveyJunkie</label>
                 
                 <input type="button" align="center" class="lapHome" onClick="parent.location='homepage.php'" value="Home"></input>
-                <input type="button" align="center" class="lapAbout" onClick="parent.location='about.php'" value="About"></input>
+                <input type="button" align="center" class="lapAbout" onClick="parent.location='about.html'" value="About"></input>
                 <a class="out" href="logout.php">LogOut</a>
                 <div class="lapIcons">
                     <div class="icon"><img src="assets/icons/instagram.png" onClick='window.open("https://www.instagram.com/p/BgSlRglAKBn/?hl=en")' width="35px"></div>
